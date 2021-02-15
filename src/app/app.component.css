@@ -1,0 +1,32 @@
+#app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+#report-list-host,
+#theme-list-host {
+  flex: 0 0 auto;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+
+#theme-list-host {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#designer-host,
+#viewer-host {
+  flex: 1 1 auto;
+}
+
+#report-list-title {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  height: 52px;
+  border-bottom: 1px solid #dbdbdb;
+}

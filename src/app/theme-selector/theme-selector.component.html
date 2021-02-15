@@ -1,0 +1,9 @@
+<ul>
+    <li
+      *ngFor="let theme of themeList; index as i"
+      (click)="onThemeChanged(theme)"
+    >
+      {{ theme.name }}
+    </li>
+  </ul>
+  
