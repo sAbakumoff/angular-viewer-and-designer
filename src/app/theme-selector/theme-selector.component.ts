@@ -8,10 +8,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ThemeSelectorComponent implements OnInit {
   @Output() themeChanged = new EventEmitter<string>();
   @Input() themeList: any = [];
+  activeIndex = 0;
 
   constructor() {}
 
-  onThemeChanged(theme: any) {
+  onThemeChanged(theme: any, index: number) {
+    this.activeIndex = index;
     this.themeChanged.emit(theme.class);
   }
 

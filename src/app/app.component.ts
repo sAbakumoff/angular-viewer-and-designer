@@ -70,7 +70,6 @@ export class AppComponent {
   }
 
   themeChanged(themeClass) {
-    console.log(themeClass);
     this.appClass = themeClass;
     this.changeDetectorRef.detectChanges();
   }
