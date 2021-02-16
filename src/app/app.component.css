@@ -4,16 +4,18 @@
   height: 100vh;
 }
 
-#report-list-host,
-#theme-list-host {
+#list-host {
+  display: flex;
+  flex-direction: column;
   flex: 0 0 auto;
   height: 100%;
   background-color: #f1f1f1;
+  overflow: hidden;
 }
 
-#theme-list-host {
-  margin-left: 20px;
-  margin-right: 20px;
+.activereportsjs-dark-theme #list-host {
+  background-color: #3b3c3f;
+  color: #e6e6e6;
 }
 
 #designer-host,
@@ -21,12 +23,22 @@
   flex: 1 1 auto;
 }
 
-#report-list-title {
-  display: flex;
+.list-title {
   align-items: center;
-  padding: 0 2px;
-  margin: 0 10px;
-  font-size: 1.5rem;
-  height: 52px;
   border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 52px;
+  margin: 0 10px;
+  padding: 0 2px;
+  user-select: none;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
 }
